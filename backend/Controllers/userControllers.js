@@ -42,11 +42,12 @@ const loginUser=async(req,res)=>{
             "xxcv",
             {expiresIn:"7d"}
         )
-        res.cookie("token",token,{
-            httpOnly:true,
-            //secure:true,
-            maxAge:1000*60*60*24*7
-        })
+        res.cookie("token", token, {
+    httpOnly: true,
+    secure: true,        
+    sameSite: "none",    
+    maxAge: 1000*60*60*24*7
+})
         res.status(200).json({
             message:"login successfull"
         })
