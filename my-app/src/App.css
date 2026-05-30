@@ -1,0 +1,22 @@
+.taskContainer{
+  font-family: 'Courier New', Courier, monospace;
+}
+.addTask
+{
+  display: flex;
+  gap:10px;
+  margin-bottom:20px;
+}
+.taskList
+{
+  list-style: none;
+}
+.taskItem{
+  display: flex;
+  width:fit-content;
+  align-items: center;
+  /* justify-content: space-between; */
+  padding:8px;
+  gap:10px;
+  border: 1px solid black;
+}
